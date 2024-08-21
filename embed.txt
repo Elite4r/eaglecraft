@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  </head>
-  <body>
-    <iframe src="https://raw.githubusercontent.com/Elite4r/eaglercraft35/main/index.html"></iframe>
-  </body>
-</html>
