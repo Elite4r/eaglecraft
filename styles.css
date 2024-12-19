@@ -1,28 +1,48 @@
 body {
-	margin-left: 2%;
-	margin-top: 2%;
-	font-family: Cabin, Arial;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-family: Cabin, Arial;
 }
 
-/*Slide in*/
+/* Slide-in animation for the body */
 body {
-        animation: slideIn 0.5s ease-out forwards;
+    animation: slideInBody 0.5s ease-out forwards;
+    transform: translateX(-100%);
+}
+
+@keyframes slideInBody {
+    from {
         transform: translateX(-100%);
     }
-
-    @keyframes slideIn {
-        from {
-            transform: translateX(-100%);
-        }
-        to {
-            transform: translateX(0);
-        }
+    to {
+        transform: translateX(0);
     }
-
-/*Slide in delay*/
-.official {
-	animation-delay: 0.7s;
 }
+
+/* Slide-in animations for .official and .three */
+.official, .three {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInContent 0.5s ease-out forwards;
+}
+
+/* Animation for the content sliding in */
+@keyframes slideInContent {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Delay for sequential animations */
+.official {
+    animation-delay: 0.7s; /* Starts after the body has moved */
+}
+
 .three {
-	animation-delay: 0.85s;
+    animation-delay: 1.0s; /* Starts after .official has moved */
 }
