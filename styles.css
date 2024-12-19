@@ -20,7 +20,7 @@ body {
 }
 
 /* Slide-in animations for .official and .three */
-.official, .three {
+.official, .three, .credit {
     opacity: 0;
     transform: translateX(-100%);
     animation: slideInContent 0.5s ease-out forwards;
@@ -40,9 +40,17 @@ body {
 
 /* Delay for sequential animations */
 .official {
-    animation-delay: 0.7s; /* Starts after the body has moved */
+    animation-delay: 0.4s; /* Starts after the body has moved */
 }
 
 .three {
-    animation-delay: 1.0s; /* Starts after .official has moved */
+    animation-delay: 0.7s; /* Starts after .official has moved */
+}
+
+.credit {
+    animation-delay: 1s
+}
+/* Make title bigger */
+h1 {
+    font-size: 125%;
 }
