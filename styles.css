@@ -40,15 +40,15 @@ body {
 
 /* Delay for sequential animations */
 .official {
-    animation-delay: 0.4s; /* Starts after the body has moved */
+    animation-delay: 0.3s; /* Starts after the body has moved */
 }
 
 .three {
-    animation-delay: 0.7s; /* Starts after .official has moved */
+    animation-delay: 0.5s; /* Starts after .official has moved */
 }
 
 .credit {
-    animation-delay: 1s;
+    animation-delay: 0.7s;
 }
 /* Make title bigger */
 h1 {
