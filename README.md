@@ -1,4 +1,4 @@
 # Eaglercraft
 
-This is a simple eaglercraft hub with the latest versions and clients.
-Ask for more clients in issues tab.
+<p> This is a simple eaglercraft hub with the latest versions and clients.
+<p> Ask for more clients in issues tab.
